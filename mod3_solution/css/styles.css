@@ -1,0 +1,133 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #444444;
+  font-family: 'Georgia', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border-left: 2px solid #40E0D0;
+  border-right: 2px solid #40E0D0;
+  border-bottom: 2px solid #40E0D0;
+  border-top: 0;
+}
+.navbar-brand {
+  padding-top: 17px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Times New Roman', serif;
+  color: #40E0D0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #40E0D0;
+  text-align: center;
+  background-color: gray;
+}
+#nav-list a:hover {
+  background: #444444;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #40E0D0;
+  background-color: #444444;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -42px;
+}
+/** END HEADER **/
+
+/** HOME PAGE **/
+div > h1 {
+  font-size: 1.5em;
+  color: white;
+}
+div > h3 {
+  font-size: 1.2em;
+  color: #40E0D0;
+  background-color: #444444;
+  border-radius: 15px;
+  padding: 5px;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+div#chicken-box, div#beef-box, div#sushi-box {
+  text-align: left;
+  color: black;
+  font-size: .9em;
+}
+#chicken-box, #beef-box, #sushi-box {
+  background-color: grey;
+  border: 2px solid #40E0D0;
+  padding: 0 10px 10px 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+div.text-center {
+  margin-top: 10px;
+
+}
+div.text-center > a {
+  color: #40E0D0;
+  background-color: #444444;
+  border-radius: 15px;
+  padding: 5px;
+}
+div.text-center > a:focus, div.text-center > a:hover {
+  text-decoration: none;
+  color: #444444;
+  background-color: #40E0D0;
+}
+/** END HOME PAGE **/
+
+
+/********** Medium and up devices only **********/
+@media (min-width: 992px) {
+  /* HOME PAGE */
+  #chicken-box, #beef-box, #sushi-box {
+    width: auto;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* HOME PAGE */
+  #chicken-box, #beef-box {
+    width: 345px;
+  }
+  #sushi-box {
+    width: 100%;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* HEADER */
+  .navbar-brand {
+  margin: auto 13px;
+  }
+  /* END HEADER */
+
+  /* HOME PAGE */
+  #chicken-box, #beef-box, #sushi-box {
+    margin: auto 30px;
+    margin-bottom: 30px;
+  }
+  /* END HOME PAGE */
+}
